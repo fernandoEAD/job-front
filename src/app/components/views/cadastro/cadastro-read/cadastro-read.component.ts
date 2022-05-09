@@ -11,7 +11,7 @@ export class CadastroReadComponent implements OnInit {
 
   cadastros: Cadastro[] = []
 
-  displayedColumns: string[] = ['id', 'nome', 'job', 'acoes'];
+  displayedColumns: string[] = ['id', 'nome', 'job', 'visualizar', 'acoes'];
 
   constructor(private service: CadastroService) { }
 
