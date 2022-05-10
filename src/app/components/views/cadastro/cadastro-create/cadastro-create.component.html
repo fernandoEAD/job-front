@@ -1,0 +1,17 @@
+<form >
+    <h1>CRIANDO NOVO CADASTRO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="cadastro.nome" type="text" name="nome" placeholder="">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <input matInput [(ngModel)]="cadastro.job" type="text" name="descricao" placeholder="">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary"> CRIAR </button>
+        <button class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+</form>

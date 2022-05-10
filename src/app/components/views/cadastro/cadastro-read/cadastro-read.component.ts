@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cadastro } from '../cadastro.model';
 import { CadastroService } from '../cadastro.service';
 
@@ -10,10 +11,9 @@ import { CadastroService } from '../cadastro.service';
 export class CadastroReadComponent implements OnInit {
 
   cadastros: Cadastro[] = []
-
   displayedColumns: string[] = ['id', 'nome', 'job', 'visualizar', 'acoes'];
 
-  constructor(private service: CadastroService) { }
+  constructor(private service: CadastroService, private router: Router) {}
 
   ngOnInit(): void {
     this.findAll();
@@ -24,5 +24,9 @@ export class CadastroReadComponent implements OnInit {
       console.log(resposta)
       this.cadastros = resposta;
     })
+  }
+
+  navegarParaCadastroCreate() {
+    this.router.navigate(["cadastros/create"])
   }
 }
