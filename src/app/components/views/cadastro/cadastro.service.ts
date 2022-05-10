@@ -19,9 +19,24 @@ export class CadastroService {
     return this.http.get<Cadastro[]>(url)
   }
 
+  findById(id: String): Observable<Cadastro> {
+    const url = `${this.baseUrl}/cadastros/${id}`
+    return this.http.get<Cadastro>(url)
+  }
+
   create(cadastro: Cadastro): Observable<Cadastro>{
     const url =`${this.baseUrl}/cadastros`
     return this.http.post<Cadastro>(url, cadastro);
+  }
+
+  delete(id: String):Observable<void> {
+    const url = `${this.baseUrl}/cadastros/${id}`
+    return this.http.delete<void>(url)
+  }
+
+  update(cadastro: Cadastro):Observable<void> {
+    const url = `${this.baseUrl}/cadastros/${cadastro.id}`
+    return this.http.put<void>(url, cadastro)
   }
 
   mensagem(str: String): void {

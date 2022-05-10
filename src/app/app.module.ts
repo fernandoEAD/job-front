@@ -23,6 +23,8 @@ import { FormsModule } from "@angular/forms";
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { CadastroDeleteComponent } from './components/views/cadastro/cadastro-delete/cadastro-delete.component';
+import { CadastroUpdateComponent } from './components/views/cadastro/cadastro-update/cadastro-update.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HomeComponent,
     CadastroReadComponent,
     CadastroCreateComponent,
+    CadastroDeleteComponent,
+    CadastroUpdateComponent,
   ],
   imports: [
     BrowserModule,

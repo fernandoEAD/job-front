@@ -1,17 +1,17 @@
 <form >
-    <h1>CRIANDO NOVO CADASTRO</h1>
+    <h1>DELETANDO CADASTRO</h1>
 
     <mat-form-field class="form">
         <mat-label>Nome</mat-label>
-        <input matInput [(ngModel)]="cadastro.nome" type="text" name="nome" placeholder="">
+        <input matInput [(ngModel)]="cadastro.nome" type="text" name="nome" disabled>
     </mat-form-field>
     <mat-form-field class="form">
         <mat-label>Job</mat-label>
-        <input matInput [(ngModel)]="cadastro.job" type="text" name="descricao" placeholder="">
+        <input matInput [(ngModel)]="cadastro.job" type="text" name="descricao" disabled>
     </mat-form-field>
 
     <div class="buttons">
-        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary"> CRIAR </button>
+        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary"> DELETAR </button>
         <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
     </div>
 </form>
