@@ -29,4 +29,5 @@ export class CadastroReadComponent implements OnInit {
   navegarParaCadastroCreate() {
     this.router.navigate(["cadastros/create"])
   }
+
 }

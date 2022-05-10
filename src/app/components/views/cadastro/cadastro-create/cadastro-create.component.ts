@@ -31,4 +31,8 @@ export class CadastroCreateComponent implements OnInit {
     })
   }
 
+  cancel(): void {
+    this.router.navigate(['cadastros'])
+  }
+
 }
