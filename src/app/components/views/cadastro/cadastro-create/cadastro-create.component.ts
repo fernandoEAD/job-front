@@ -125,26 +125,4 @@ export class CadastroCreateComponent implements OnInit {
   cancel(): void {
     this.router.navigate(["pessoas"]);
   }
-
-  //teste(): void {
-   // const competencia: Competencia = {
-   //   nome: this.nome,
-  //    proeficiencia: this.proeficiencia,
-   //   descricao: this.descricao,
-   // };
-   // this.pessoa.competencia.push(competencia);
-   // this.descricao = "";
-   // this.proeficiencia = "";
- // }
-
-  //teste2(): void {
-    //console.log(this.pessoa.competencia);
-  //}
-
-  //excluir(valor: String): void {
-    //const index = this.pessoa.competencia.findIndex(
-      //(c) => c.descricao === valor
-   // );
-    //this.pessoa.competencia.splice(index, 1);
-  //}
 }
