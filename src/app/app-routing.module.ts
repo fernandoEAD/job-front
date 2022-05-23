@@ -12,20 +12,24 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'cadastros',
+    path: 'pessoas',
     component: CadastroReadComponent
   },
   {
-    path: 'cadastros/create',
+    path: 'pessoas/create',
     component: CadastroCreateComponent
   },
   {
-    path: 'cadastros/delete/:id',
+    path: 'pessoas/delete/:id',
     component: CadastroDeleteComponent
   },
   {
-    path: 'cadastros/update/:id',
+    path: 'pessoas/update/:id',
     component: CadastroUpdateComponent
+  },
+  {
+    path: 'pessoas/:id',
+    component: CadastroCreateComponent
   }
 ];
 

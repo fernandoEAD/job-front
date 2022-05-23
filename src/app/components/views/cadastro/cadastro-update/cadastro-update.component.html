@@ -3,12 +3,72 @@
 
     <mat-form-field class="form">
         <mat-label>Nome</mat-label>
-        <input matInput [(ngModel)]="cadastro.nome" type="text" name="nome" placeholder="">
+        <input matInput [(ngModel)]="pessoa.nome" type="text" name="nome" placeholder="">
     </mat-form-field>
+
     <mat-form-field class="form">
-        <mat-label>Job</mat-label>
-        <input matInput [(ngModel)]="cadastro.job" type="text" name="descricao" placeholder="">
+        <mat-label>CPF</mat-label>
+        <input matInput [(ngModel)]="pessoa.cpf" type="text" name="cpf" placeholder="" mask="000.000.000-00">
     </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Data de Nascimento</mat-label>
+        <input matInput [(ngModel)]="auxData" type="text" name="data" placeholder="Ex: 30/12/1999" mask="00/00/0000">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="pessoa.email" type="text" name="email" placeholder="">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Telefone</mat-label>
+        <input matInput [(ngModel)]="pessoa.telefone" type="text" name="telefone" placeholder="" prefix="+55" mask="(00) 00000-0000">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Escolaridade</mat-label>
+        <mat-select [(ngModel)]="pessoa.escolaridade" type="text" name="comp" placeholder="">
+            <mat-option *ngFor="let escolaridade of escolaridades" [value]="escolaridade.name">
+                {{escolaridade.name}}
+            </mat-option>   
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Função</mat-label>
+        <input matInput [(ngModel)]="pessoa.funcao" type="text" name="funcao" placeholder="">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Competencia 1</mat-label>
+        <input matInput [(ngModel)]="pessoa.competencia1" type="text" name="competencia1" placeholder="" />
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <input matInput [(ngModel)]="pessoa.descricao1" type="text" name="descricao1" placeholder="" />
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Nivel</mat-label>
+        <input matInput [(ngModel)]="pessoa.prof1" type="text" name="prof1" placeholder="" />
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Competencia 2</mat-label>
+        <input matInput [(ngModel)]="pessoa.competencia2" type="text" name="competencia2" placeholder="" />
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <input matInput [(ngModel)]="pessoa.descricao2" type="text" name="descricao2" placeholder="" />
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Nivel</mat-label>
+        <input matInput [(ngModel)]="pessoa.prof2"type="text" name="prof2" placeholder="" />
+      </mat-form-field>
 
     <div class="buttons">
         <button (click)="update()" class="mat-elevation-z8" mat-stroked-button color="primary"> ATUALIZAR </button>

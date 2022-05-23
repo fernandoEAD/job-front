@@ -25,6 +25,11 @@ button {
 .visualizar {
     color: rgb(37, 125, 240);
     margin-left: .6rem;
+}
+
+.aprovado_reprovado {
+    color: rgb(228, 56, 56);
+    margin-left: .6rem;
 
 }
 
@@ -38,5 +43,29 @@ button {
 }
 
 .mat-header {
-    width: 5rem;
+    width: 9rem;
+}
+
+.aprovado {
+    color: rgb(206, 173, 24);
+    margin-left: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.reprovado {
+    color: rgb(228, 56, 56);
+    margin-left: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.headertb {
+    align-items: center;
+}
+
+.aprovadogreen{
+
+}
+
+.reprovadored{
+    
 }
