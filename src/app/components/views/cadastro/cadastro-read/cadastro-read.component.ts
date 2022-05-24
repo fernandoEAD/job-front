@@ -11,7 +11,7 @@ import { CadastroService } from '../cadastro.service';
 export class CadastroReadComponent implements OnInit {
 
   cadastros: Cadastro[] = []
-  displayedColumns: string[] = ['id', 'nome', 'cpf', 'funcao', 'aprovado_reprovado', 'visualizar', 'acoes'];
+  displayedColumns: string[] = ['id', 'nome', 'cpf', 'funcao', 'aprovado_reprovado', 'acoes'];
 
   pessoa: Cadastro = {
     nome: '',

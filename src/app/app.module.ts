@@ -33,6 +33,8 @@ import { MatExpansionModule } from '@angular/material/expansion'
 import { MatRadioModule } from '@angular/material/radio';
 import { AdminCreateComponent } from './components/views/cadastro/admin-create/admin-create.component';
 import { LoginComponent } from './components/views/cadastro/login/login.component';
+import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -69,6 +71,7 @@ import { LoginComponent } from './components/views/cadastro/login/login.componen
     MatExpansionModule,
     MatRadioModule,
     ReactiveFormsModule,
+    NgChartsModule,
     NgxMaskModule.forRoot({
       dropSpecialCharacters: false
     })

@@ -116,6 +116,6 @@ export class AdminCreateComponent implements OnInit {
   }
 
   cancel(): void {
-    this.router.navigate(["pessoas"]);
+    this.router.navigate(["admin"]);
   }
 }

@@ -30,7 +30,6 @@ button {
 .aprovado_reprovado {
     color: rgb(228, 56, 56);
     margin-left: .6rem;
-
 }
 
 .edit {
@@ -48,14 +47,12 @@ button {
 
 .aprovado {
     color: rgb(206, 173, 24);
-    margin-left: 0.7rem;
-    margin-bottom: 1rem;
+
 }
 
 .reprovado {
     color: rgb(228, 56, 56);
-    margin-left: 0.1rem;
-    margin-bottom: 1rem;
+
 }
 
 .headertb {

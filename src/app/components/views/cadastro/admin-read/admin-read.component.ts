@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Router } from '@angular/router';
 import { Cadastro } from '../cadastro.model';
 import { CadastroService } from '../cadastro.service';
@@ -10,6 +9,9 @@ import { CadastroService } from '../cadastro.service';
   styleUrls: ['./admin-read.component.css']
 })
 export class AdminReadComponent implements OnInit {
+
+
+
 
   cadastros: Cadastro[] = []
   displayedColumns: string[] = ['id', 'nome', 'cpf', 'funcao', 'aprovado_reprovado', 'visualizar', 'acoes'];
@@ -62,5 +64,24 @@ export class AdminReadComponent implements OnInit {
   aprovedxreproved (value : boolean ) : String {
     return value === null? '' : value ? 'done' : 'close' ;
   }
+
+
+
+
+ 
+
+  public doughnutChartLabels:string[] = ['Tamales', 'Tortillas', 'Chorizo'];
+  public doughnutChartData:number[] = [350, 450, 100];
+  public doughnutChartType:string = 'doughnut';
+
+  public chartClicked(e:any):void {
+    console.log(e);
+  }
+
+  public chartHovered(e:any):void {
+    console.log(e);
+  }
+
+
 
 }
