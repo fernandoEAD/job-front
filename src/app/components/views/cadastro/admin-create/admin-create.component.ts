@@ -1,16 +1,15 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import * as moment from "moment";
 import { Cadastro } from "../cadastro.model";
 import { CadastroService } from "../cadastro.service";
 
 @Component({
-  selector: "app-cadastro-create",
-  templateUrl: "./cadastro-create.component.html",
-  styleUrls: ["./cadastro-create.component.css"],
+  selector: 'app-admin-create',
+  templateUrl: './admin-create.component.html',
+  styleUrls: ['./admin-create.component.css']
 })
-
-export class CadastroCreateComponent implements OnInit {
+export class AdminCreateComponent implements OnInit {
   public auxData = "";
 
   public descricao = "";
@@ -34,6 +33,7 @@ export class CadastroCreateComponent implements OnInit {
     descricao2: "",
     prof2: ""
   };
+
 
   escolaridade = "";
 

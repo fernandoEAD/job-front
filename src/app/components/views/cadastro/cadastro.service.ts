@@ -29,8 +29,7 @@ export class CadastroService {
     const url =`${this.baseUrl}/pessoas`
 
     return this.http.post<Cadastro>(url, cadastro);
-  }
-  
+  }  
 
   // create competencia
 

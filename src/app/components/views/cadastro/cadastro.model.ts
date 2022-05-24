@@ -1,4 +1,3 @@
-import { Competencia } from "./competencia.model";
 export interface Cadastro {
   id?: number;
   nome: String;

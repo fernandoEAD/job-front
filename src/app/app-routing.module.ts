@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastroReadComponent } from './components/views/cadastro/cadastro-read/cadastro-read.component';
 import { CadastroCreateComponent } from './components/views/cadastro/cadastro-create/cadastro-create.component';
 import { CadastroDeleteComponent } from './components/views/cadastro/cadastro-delete/cadastro-delete.component';
+import { AdminReadComponent } from './components/views/cadastro/admin-read/admin-read.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,11 @@ const routes: Routes = [
   {
     path: 'pessoas/:id',
     component: CadastroCreateComponent
-  }
+  },
+  {
+    path: 'admin',
+    component: AdminReadComponent
+  },
 ];
 
 @NgModule({

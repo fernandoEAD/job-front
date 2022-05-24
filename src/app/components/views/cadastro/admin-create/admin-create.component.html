@@ -1,0 +1,101 @@
+<form>
+    <h1 *ngIf="!createOrUpdate()">CRIANDO NOVO CADASTRO</h1>
+    <h1 *ngIf="createOrUpdate()">VISUALIZANDO CADASTRO</h1>
+  
+    <mat-form-field class="form">
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="pessoa.nome" type="text" name="nome" disabled="{{ createOrUpdate() }}" placeholder="" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>CPF</mat-label>
+      <input matInput [(ngModel)]="pessoa.cpf" type="text" name="cpf" disabled="{{ createOrUpdate() }}" placeholder=" " mask="000.000.000-00" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Data de Nascimento</mat-label>
+      <input matInput [(ngModel)]="auxData" type="text" name="data" disabled="{{ createOrUpdate() }}" placeholder="" mask="00/00/0000" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="pessoa.email" type="text" name="email" disabled="{{ createOrUpdate() }}" placeholder="" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Telefone</mat-label>
+      <input matInput [(ngModel)]="pessoa.telefone" type="text" name="telefone" disabled="{{ createOrUpdate() }}" placeholder="" prefix="+55" mask="(00) 00000-0000" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Escolaridade</mat-label>
+      <mat-select [(ngModel)]="pessoa.escolaridade" type="text" name="escolaridade" disabled="{{ createOrUpdate() }}" placeholder="" >
+        <mat-option *ngFor="let escolaridade of escolaridades" [value]="escolaridade.name" >
+          {{ escolaridade.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Função</mat-label>
+      <input matInput [(ngModel)]="pessoa.funcao" type="text" name="funcao" disabled="{{ createOrUpdate() }}" placeholder="" />
+    </mat-form-field>
+  
+    
+    <mat-form-field class="form">
+      <mat-label>Competencia 1</mat-label>
+      <input matInput [(ngModel)]="pessoa.competencia1" type="text" name="competencia1" disabled="{{ createOrUpdate() }}" placeholder="" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Descrição</mat-label>
+      <input matInput [(ngModel)]="pessoa.descricao1" type="text" name="descricao1" disabled="{{ createOrUpdate() }}" placeholder="" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Nivel</mat-label>
+      <mat-select [(ngModel)]="pessoa.prof1" type="text" name="prof1" disabled="{{ createOrUpdate() }}" placeholder="" >
+        <mat-option *ngFor="let prof1 of profs1" [value]="prof1.name" >
+          {{ prof1.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Competencia 2</mat-label>
+      <input matInput [(ngModel)]="pessoa.competencia2" type="text" name="competencia2" disabled="{{ createOrUpdate() }}" placeholder="" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Descrição</mat-label>
+      <input matInput [(ngModel)]="pessoa.descricao2" type="text" name="descricao2" disabled="{{ createOrUpdate() }}" placeholder="" />
+    </mat-form-field>
+  
+    <mat-form-field class="form">
+      <mat-label>Nivel</mat-label>
+      <mat-select [(ngModel)]="pessoa.prof2" type="text" name="prof2" disabled="{{ createOrUpdate() }}" placeholder="" >
+        <mat-option *ngFor="let prof2 of profs2" [value]="prof2.name" >
+          {{ prof2.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <div class="buttons">
+      <span [hidden]="createOrUpdate()">
+        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary" >
+          CRIAR
+        </button>
+      </span>
+      <span [hidden]="createOrUpdate()">
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn" >
+          CANCELAR
+        </button>
+      </span>
+      <span *ngIf="createOrUpdate()">
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn" >
+          VOLTAR
+        </button>
+      </span>
+    </div>
+  </form>
+  

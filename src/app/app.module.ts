@@ -1,3 +1,4 @@
+import { AdminReadComponent } from './components/views/cadastro/admin-read/admin-read.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,6 +30,7 @@ import { CadastroUpdateComponent } from './components/views/cadastro/cadastro-up
 import { MatSelectModule } from '@angular/material/select';
 import { MatExpansionModule } from '@angular/material/expansion'
 import { MatRadioModule } from '@angular/material/radio';
+import { AdminCreateComponent } from './components/views/cadastro/admin-create/admin-create.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { MatRadioModule } from '@angular/material/radio';
     CadastroCreateComponent,
     CadastroDeleteComponent,
     CadastroUpdateComponent,
+    AdminReadComponent,
+    AdminCreateComponent,
   ],
   imports: [
     BrowserModule,
