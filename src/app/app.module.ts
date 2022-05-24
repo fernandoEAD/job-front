@@ -3,6 +3,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatExpansionModule } from '@angular/material/expansion'
 import { MatRadioModule } from '@angular/material/radio';
 import { AdminCreateComponent } from './components/views/cadastro/admin-create/admin-create.component';
+import { LoginComponent } from './components/views/cadastro/login/login.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { AdminCreateComponent } from './components/views/cadastro/admin-create/a
     CadastroUpdateComponent,
     AdminReadComponent,
     AdminCreateComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +68,7 @@ import { AdminCreateComponent } from './components/views/cadastro/admin-create/a
     MatSelectModule,
     MatExpansionModule,
     MatRadioModule,
+    ReactiveFormsModule,
     NgxMaskModule.forRoot({
       dropSpecialCharacters: false
     })

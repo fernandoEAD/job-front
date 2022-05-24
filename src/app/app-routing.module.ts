@@ -6,6 +6,7 @@ import { CadastroReadComponent } from './components/views/cadastro/cadastro-read
 import { CadastroCreateComponent } from './components/views/cadastro/cadastro-create/cadastro-create.component';
 import { CadastroDeleteComponent } from './components/views/cadastro/cadastro-delete/cadastro-delete.component';
 import { AdminReadComponent } from './components/views/cadastro/admin-read/admin-read.component';
+import { LoginComponent } from './components/views/cadastro/login/login.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminReadComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
 ];
 

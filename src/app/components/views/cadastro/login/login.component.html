@@ -1,0 +1,24 @@
+<form [formGroup]="form" (ngSubmit)="login()" >
+
+        <mat-form-field class="form">
+
+        <mat-label for="nome">Nome</mat-label>
+
+            <input matInput type="nome" id="nome" formControlName="nome" requiredminlength="5" placeholder=""/>
+
+        </mat-form-field>
+        
+        <mat-form-field class="form">
+
+        <mat-label for="senha">Senha</mat-label>
+            
+            <input matInput type="password" id="senha" formControlName="senha" requiredminlength="8" placeholder=""/>
+
+    </mat-form-field>
+
+        <div class="form-group">
+            <button  class="mat-elevation-z8" mat-stroked-button color="primary" type="submit" [disabled]="!form.valid" >Entrar</button>
+            <p *ngIf='mensagem !=""'>{{ mensagem }}</p>
+        </div>
+
+    </form>
