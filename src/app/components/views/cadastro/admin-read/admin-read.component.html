@@ -70,17 +70,21 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-  </div>
 
-  <!--
- 
-  <div style="display: block">
-  <canvas baseChart
-              [data]="doughnutChartData"
-              [labels]="doughnutChartLabels"
-              [chartType]="doughnutChartTtype"
-              [chartHover]="chartHovered($event)"
-              [chartClick]="chartClicked($event)"></canvas>
+
+
+    <div>
+  <div>
+    <div style="display: block">
+      <canvas baseChart
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [type]="barChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+    <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
   </div>
--->
- 
+</div>

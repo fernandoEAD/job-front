@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,6 +35,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { AdminCreateComponent } from './components/views/cadastro/admin-create/admin-create.component';
 import { LoginComponent } from './components/views/cadastro/login/login.component';
 import { NgChartsModule } from 'ng2-charts';
+
 
 
 @NgModule({
