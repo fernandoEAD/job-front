@@ -118,4 +118,8 @@ export class CadastroCreateComponent implements OnInit {
   cancel(): void {
     this.router.navigate(["admin"]);
   }
+
+  cancelusuarios(): void {
+    this.router.navigate(["pessoas"]);
+  }
 }

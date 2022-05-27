@@ -4,7 +4,7 @@
 
   <mat-form-field class="form">
     <mat-label>Nome</mat-label>
-    <input matInput [(ngModel)]="pessoa.nome" type="text" name="nome" disabled="{{ createOrUpdate() }}" placeholder="" />
+    <input matInput [(ngModel)]="pessoa.nome" type="text" name="nome" disabled="{{ createOrUpdate() }}" placeholder="" maxlength="100">
   </mat-form-field>
 
   <mat-form-field class="form">
@@ -87,7 +87,7 @@
       </button>
     </span>
     <span [hidden]="createOrUpdate()">
-      <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn" >
+      <button (click)="cancelusuarios()" class="mat-elevation-z8" mat-stroked-button color="warn" >
         CANCELAR
       </button>
     </span>
